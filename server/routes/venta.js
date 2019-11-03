@@ -118,7 +118,7 @@ app.post('/venta', verificaToken, (req, res) => {
                     }
 
                     let cont = dataPro.cantidad - obj.cantidad;
-                    // console.log(cont);
+
                     dataPro.cantidad = cont;
 
                     dataPro.save((err, proSave) => {
